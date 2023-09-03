@@ -50,7 +50,8 @@ const SignUp = () => {
     const [touched,setTouched] = useState({});
 
     useEffect(() => {
-        setErrors(validate(data,"signup"))
+        setErrors(validate(data,"signup"));
+        document.title = ('Sign Up');
     },[data,touched])
 
 
@@ -107,7 +108,7 @@ const SignUp = () => {
                     name="email" 
                     value={data.email} 
                     onChange={changeHandler}
-                     onFocus={focusHandler}/>
+                    onFocus={focusHandler}/>
                     {errors.email && touched.email && <span>{errors.email}</span>}
                 </div>
                 <div className={styles.formField}>

@@ -24,12 +24,13 @@ const Login = () => {
         password:""
     })
 
-    const [isShow,setIsShow] = useState(false)
+    const [isShow,setIsShow] = useState(false);
     const [errors,setErrors] = useState({});
     const [touched,setTouched] = useState({});
 
     useEffect(() => {
-        setErrors(validate(data,"login"))
+        setErrors(validate(data,"login"));
+        document.title = ('Login');
     },[data,touched])
 
 

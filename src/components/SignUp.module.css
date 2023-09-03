@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     background-color: #f9f9f9;
-    /* min-height: 100vh; */
     align-items: center;
     height: 750px;
 
@@ -175,16 +174,17 @@ input[type="checkbox"]:focus{
     .uncompleted{
         width: 90%;
     }
+    
 }
 
 @media(max-width: 400px){
     .inner{
-        margin-left: 210px;
+        margin-left: 90%;
     }
 }
 @media(max-width: 300px){
     .inner{
-        margin-left: 200px;
+        margin-left: 90%;
     }
 }
 
